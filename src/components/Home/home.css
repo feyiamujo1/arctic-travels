@@ -156,7 +156,70 @@
     text-align: center;
     margin-top: 0px;
 }
-
+.region_gallery{
+    width: 100%;
+    height: 150vh;
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.region_gallery .region_image{
+    position: relative;
+    display: flex;
+    height: 100%;
+    box-sizing: border-box;
+}
+.region_gallery h1{
+    position: absolute;
+    right: 0;
+    bottom: 10px;
+    box-sizing: border-box;
+    font-size: 68px;
+    color: #FFFFFF;
+    transform: rotate(-180deg);
+    writing-mode: vertical-lr; 
+    
+}
+.region_gallery h3{
+    font-size: 20px;
+    font-weight: 400;
+    width: 550px;
+    color: #FFFFFF;
+    display: none;
+}
+.region_gallery button{
+    font-size: 16px;
+    font-weight: 600;
+    color: #FFFFFF;
+    padding: 20px 50px;
+    background-color: #3E86F5;
+    border-radius: 10px;
+    border: none;
+    margin-top: 68px;
+    display: none;
+}
+.region_gallery .region_image_one{
+    height: 100%;
+    width: 33.33%;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)),  url("/src/images/tourist-with-baggage-map-fuji-mountain-kawaguchiko-japan.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.region_gallery .region_image_two{
+    height: 100%;
+    width: 33.33%;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url("/src/images/snowboarder-motion-riding-down-hill-mountain-resort.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.region_gallery .region_image_three{
+    height: 100%;
+    width: 33.33%;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url("/src/images/young-skier-motion-with-beautiful-winter-landscape.jpg");
+    background-size: cover;
+    background-position: center;
+}
 .resort_destination{
     box-sizing: border-box; 
     margin: 0 auto; 
@@ -202,7 +265,7 @@
     margin-right: 15px;
 }
 .resort_destination .resort_one:hover{
-    background: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)) , url("/src/images/resort1.png");
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.563442) 60.97%, rgba(0, 0, 0, 0.65) 100%), url("/src/images/resort1.png");
 }
 .resort_destination .resort_two{
     background: url("/src/images/resort2.png") #3E86F5;
@@ -211,7 +274,7 @@
     margin-right: 15px;
 }
 .resort_destination .resort_two:hover{
-    background: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)) , url("/src/images/resort2.png");
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.563442) 60.97%, rgba(0, 0, 0, 0.65) 100%) , url("/src/images/resort2.png");
 }
 .resort_destination .resort_three{
     background: url("/src/images/resort.jpg") #3E86F5;
@@ -222,7 +285,7 @@
     margin-left: 15px;
 }
 .resort_destination .resort_three:hover{
-    background: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)) , url("/src/images/resort.jpg");
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.563442) 60.97%, rgba(0, 0, 0, 0.65) 100%), url("/src/images/resort.jpg");
     background-position: center;
     background-size: cover;
 }
@@ -233,7 +296,7 @@
     margin-left: 15px;
 }
 .resort_destination .resort_four:hover{
-    background: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)) , url("/src/images/resort4.png");
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.563442) 60.97%, rgba(0, 0, 0, 0.65) 100%), url("/src/images/resort4.png");
 }
 @keyframes slide-up {
     from {

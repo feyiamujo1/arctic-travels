@@ -35,6 +35,13 @@ function Home() {
     {id: 4, image: Intrax}, 
     {id: 5, image: Mastercard}
   ]
+  const region_gallery_infos = [
+    {id: 1, Topic: "Mountain Resort", info: "This is a place you would love to be to explore nature paradise anywhere in the world", classname: "region_image region_image_one"},
+    {id: 2, Topic: "Fuji Mountain", info: "This is a place you would love to be to explore nature paradise anywhere in the world", classname: "region_image region_image_two"},
+    {id: 3, Topic: "Freezing WinterLake", info: "This is a place you would love to be to explore nature paradise anywhere in the world", classname: "region_image region_image_three"},
+  ]
+  //handleDisplay ((id) =>)
+
   return (
     <div className='main'>
       <div className='main_display'>
@@ -84,7 +91,24 @@ function Home() {
               View Regions available
             </h1>
           </div>
-          
+        </div>
+        <div className='region_gallery'>
+          {/* Continue from here */}
+          {
+            region_gallery_infos && region_gallery_infos.map((region_gallery_info) =>
+               <div /*onClick={() =>{handleDisplay(region_gallery_info.id)}} */ className={region_gallery_info.classname}>
+                <h1>
+                  {region_gallery_info.Topic}
+                </h1>
+                <h3>
+                  {region_gallery_info.info}
+                </h3>
+                <button className='region_gallery_button'>
+                  Book Now
+                </button>
+              </div>
+            )
+          }
         </div>
         <div className='resort_destination'>
           <div className='resort_destination_part_one'>
