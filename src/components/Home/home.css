@@ -165,6 +165,7 @@
     overflow: hidden;
 }
 .region_gallery .region_image{
+    transition: ease-in;
     position: relative;
     display: flex;
     height: 100%;
@@ -173,13 +174,12 @@
 .region_gallery h1{
     position: absolute;
     right: 0;
-    bottom: 10px;
+    bottom: 50px;
     box-sizing: border-box;
     font-size: 68px;
     color: #FFFFFF;
     transform: rotate(-180deg);
     writing-mode: vertical-lr; 
-    
 }
 .region_gallery h3{
     font-size: 20px;
@@ -197,6 +197,10 @@
     border-radius: 10px;
     border: none;
     margin-top: 68px;
+    display: none;
+}
+.region_gallery .hidden{
+    transition: ease-out;
     display: none;
 }
 .region_gallery .region_image_one{
@@ -219,6 +223,10 @@
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url("/src/images/young-skier-motion-with-beautiful-winter-landscape.jpg");
     background-size: cover;
     background-position: center;
+}
+.region_gallery .spread{
+    transition: ease-out;
+    width: 100% !important;
 }
 .resort_destination{
     box-sizing: border-box; 

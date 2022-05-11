@@ -35,12 +35,42 @@ function Home() {
     {id: 4, image: Intrax}, 
     {id: 5, image: Mastercard}
   ]
+
+  //const [className, setClassName] = useState(["region_image region_image_one", "region_image region_image_two", "region_image region_image_three"]);
+
   const region_gallery_infos = [
     {id: 1, Topic: "Mountain Resort", info: "This is a place you would love to be to explore nature paradise anywhere in the world", classname: "region_image region_image_one"},
     {id: 2, Topic: "Fuji Mountain", info: "This is a place you would love to be to explore nature paradise anywhere in the world", classname: "region_image region_image_two"},
     {id: 3, Topic: "Freezing WinterLake", info: "This is a place you would love to be to explore nature paradise anywhere in the world", classname: "region_image region_image_three"},
   ]
-  //handleDisplay ((id) =>)
+
+  // const [isOpened, setIsOpened] = useState(false);
+
+  // const toggle = () => {
+  //   setIsOpened(wasOpened => !wasOpened);
+  // }
+
+  // const handleDisplay = (div_id) =>{
+  //   if (isOpened){
+  //     toggle();
+  //   }
+  //   console.log(div_id);
+  //   switch (div_id) {
+  //     case 1:
+  //       setClassName(["region_image region_image_one spread", "region_image region_image_one hidden", "region_image region_image_one hidden"])
+  //       break;
+  //     case 2:
+  //       setClassName(["region_image region_image_one hidden", "region_image region_image_one spread", "region_image region_image_one hidden"])
+  //       break;
+  //     case 3:
+  //       setClassName(["region_image region_image_one hidden", "region_image region_image_one hidden", "region_image region_image_one spread"])
+  //       break;
+  //     default:
+  //       setClassName(["region_image region_image_one", "region_image region_image_two", "region_image region_image_three"])
+  //       break;
+  //   }
+  // }
+
 
   return (
     <div className='main'>
@@ -93,10 +123,9 @@ function Home() {
           </div>
         </div>
         <div className='region_gallery'>
-          {/* Continue from here */}
           {
             region_gallery_infos && region_gallery_infos.map((region_gallery_info) =>
-               <div /*onClick={() =>{handleDisplay(region_gallery_info.id)}} */ className={region_gallery_info.classname}>
+               <div className={region_gallery_info.classname}> {/*onClick={() =>{console.log(region_gallery_info.id); handleDisplay(region_gallery_info.id)}} */}
                 <h1>
                   {region_gallery_info.Topic}
                 </h1>
